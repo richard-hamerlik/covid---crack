@@ -83,7 +83,7 @@ export const Strapper = () => {
             Charakterizuje prechod medzi ohrozenou skupinou obyvateľstva a chorými v inkubačnej dobe - S -> E.
           </SimpleHorizontalSlider>
           <SimpleHorizontalSlider {...defaultSliderProps} title={"Šanca prenosu choroby"} value={probabilityOfTransmission} setValue={setProbabilityOfTransmission} max={1} step={0.01}>
-            proste Šanca prenosu choroby brashko nechapes co si jak
+            Šanca prenosu choroby pri bilízkom kontakte medzi ohrozeným a infikovaným.
           </SimpleHorizontalSlider>
         </Col>
         <Col xs={8} sm={8} md={8} lg={8} xl={8}>
