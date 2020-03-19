@@ -73,14 +73,14 @@ export const Strapper = () => {
             Veľkosť sociálnej skupiny, v rámci ktorej modelujeme šírenie choroby. Väčšinou máme na mysli nejakú krajinu, no samotná veľkosť skupiny má však minimálny vplyv na vývin situácie v nej. 
           </SimpleHorizontalSlider>
           <SimpleHorizontalSlider {...defaultSliderProps} title={"Infekčný čas"} value={incubationTime} valueFormatter={val => `${val} dní`} setValue={setIncubationTime} max={8} step={0.01}>
-            Charakterizuje prechod medzi chorými v inkubačnej dobe a chorými-infekčnými (štádium E -> I).
+            Doba, počas ktorej jedinec potenciálne šíri ochorenie. Priemerný čas od vypuknatia choroby po izoláciu jedinca (štádium I -> R).
           </SimpleHorizontalSlider>
           <SimpleHorizontalSlider valueFormatter={val => `${val} dní`} title={"Inkubačný čas"} value={infectionTime} setValue={setInfectionTime} min={0} max={5} step={0.1}>
             Obdobie od vstupu nákazy do organizmu po vypuknutie choroby. Jediný parameter, ktorý je čisto biologický a nevieme ho ovplyvniť. Vychádzame z poslednej 
             <a target="_tab" href="https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(20)30074-7/fulltext"> dostupnej štúdie</a>.
           </SimpleHorizontalSlider>
           <SimpleHorizontalSlider {...defaultSliderProps} title={"Pomer ľudského kontaktu"} value={contactRate} setValue={setContactRate} max={20}>
-            Charakterizuje prechod medzi ohrozenou skupinou obyvateľstva a chorými v inkubačnej dobe - S -> E.
+            Charakterizuje prechod medzi ohrozenou skupinou obyvateľstva a chorými v inkubačnej dobe - S -> E. Ťažko opísateľná veličina pri chorobách širacich sa kvapôčkami, ale zavádzame ju pre ilustráciu.
           </SimpleHorizontalSlider>
           <SimpleHorizontalSlider {...defaultSliderProps} title={"Šanca prenosu choroby"} value={probabilityOfTransmission} setValue={setProbabilityOfTransmission} max={1} step={0.01}>
             Šanca prenosu choroby pri bilízkom kontakte medzi ohrozeným a infikovaným.
